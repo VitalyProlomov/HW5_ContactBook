@@ -66,7 +66,7 @@
                         <Insets />
                     </VBox.margin>
                 </Label>
-                <Label fx:id="telepphoneTextLabel" alignment="CENTER" contentDisplay="CENTER" minHeight="30.0" prefHeight="40.0" prefWidth="80.0" text="-">
+                <Label fx:id="telephoneTextLabel" alignment="CENTER" contentDisplay="CENTER" minHeight="30.0" prefHeight="40.0" prefWidth="80.0" text="-">
                     <VBox.margin>
                         <Insets />
                     </VBox.margin>

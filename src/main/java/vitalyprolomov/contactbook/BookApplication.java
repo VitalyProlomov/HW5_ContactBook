@@ -14,7 +14,6 @@ public class BookApplication extends Application {
         FXMLLoader fxmlLoader = new FXMLLoader(BookApplication.class.getResource("contact-book-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 600, 417);
 
-
         stage.setTitle("Contact Book");
         stage.setScene(scene);
         stage.show();

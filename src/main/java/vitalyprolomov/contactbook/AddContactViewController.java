@@ -6,6 +6,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
+import javafx.stage.Stage;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -29,14 +30,17 @@ public class AddContactViewController implements Initializable {
         EDIT,
         ADD
     }
-    public static Mode currentMode;
+    public static Mode mode;
+
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         saveButton.setOnMouseClicked(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent mouseEvent) {
-                saveChanges(currentMode);
+                saveChanges(mode);
+                Stage curStage = (Stage) saveButton.getScene().getWindow();
+                curStage.close();
             }
         });
     }
